@@ -14,6 +14,9 @@
 body {
   font-family: "Poppins";
   background-color: var(--bg);
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 200px;
 }
 
 .appBar {
@@ -169,6 +172,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 0.5rem;
 }
 
@@ -414,14 +418,18 @@ main {
 /* footer */
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+  position: absolute;
+  padding-bottom: 10px;
+  bottom: 0;
+  height: 200px;
+  gap: 1rem;
+  width: 100%;
   background-color: #000;
   color: #fff;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 footer picture {
   display: flex;
@@ -567,6 +575,18 @@ footer p {
   width: 100%;
   margin: 2rem 0;
   height: 2px;
+}
+
+@media screen and (max-width: 455px) {
+  #product-details div {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #product-details div {
+    width: 270px;
+  }
 }
 
 /* carrito */

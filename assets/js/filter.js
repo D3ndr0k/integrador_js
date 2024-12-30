@@ -25,10 +25,16 @@ const renderProducts = (products) => {
 const urlParams = new URLSearchParams(window.location.search);
 const categoryParam = urlParams.get("category");
 
-const filteredProducts =
-  categoryParam && categoryParam !== "all"
-    ? burgers.filter((burger) => burger.category === categoryParam)
-    : burgers;
+let filteredProducts;
+
+if (categoryParam && categoryParam !== "all") {
+  filteredProducts = burgers.filter(
+    (burger) => burger.category === categoryParam
+  );
+  categorySelect.value = categoryParam;
+} else {
+  filteredProducts = burgers;
+}
 
 renderProducts(filteredProducts);
 
