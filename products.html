@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burgertown</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="appBar">
+      <button class="burgermenu">
+        <img src="./assets/img/menu.png" alt="menu" />
+      </button>
+      <div>
+        <a href="./index.html">
+          <picture class="logo">
+            <img src="./assets/img/burgerlogo.png" alt="burgerlogo" /> </picture
+        ></a>
+      </div>
+      <nav class="menu">
+        <a href="./products.html">Productos</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./aboutus.html">Sobre nosotros</a>
+      </nav>
+      <div>
+        <a href="./carrito.html">
+          <img src="./assets/img/bag.png" alt="carrito" />
+        </a>
+      </div>
+    </header>
+
+    <form action="#" method="get" class="filter">
+      <select name="category" id="category">
+        <option value="all">Todos</option>
+        <option value="beef">Carne</option>
+        <option value="veggie">Veggie</option>
+        <option value="cheese">Queso</option>
+        <option value="spicy">spicy</option>
+        <option value="fish">Pescado</option>
+      </select>
+    </form>
+
+    <section class="newProducts">
+      <div class="show-cards"></div>
+    </section>
+
+    <footer>
+      <picture
+        ><img src="./assets/img/burgerlogo.png" alt="logo Burgertown"
+      /></picture>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contacto.html">Contáctenos</a>
+        <a href="./aboutus.html">Sobre Nosotros</a>
+      </nav>
+      <figure>
+        <a href="https://www.facebook.com/"
+          ><img src="./assets/img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="./assets/img/insta.svg" alt="instagram"
+        /></a>
+        <a href="https://x.com/"
+          ><img src="./assets/img/twitter.svg" alt="twitter"
+        /></a>
+      </figure>
+      <p>Copyright ©2024 | made by Kami :D</p>
+    </footer>
+
+    <script type="module" src="./assets/js/filter.js"></script>
+    <script type="module" src="./assets/js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="appBar">
+      <button class="burgermenu">
+        <img src="./assets/img/menu.png" alt="menu" />
+      </button>
+      <div>
+        <a href="./index.html">
+          <picture class="logo">
+            <img src="./assets/img/burgerlogo.png" alt="burgerlogo" /> </picture
+        ></a>
+      </div>
+      <nav class="menu">
+        <a href="./products.html">Productos</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./aboutus.html">Sobre nosotros</a>
+      </nav>
+      <div>
+        <a href="./carrito.html">
+          <img src="./assets/img/bag.png" alt="carrito" />
+        </a>
+      </div>
+    </header>
+
+    <section class="cart">
+      <div id="cart-items"></div>
+      <div class="div-total">
+        <h3>Total: <span id="cart-total">$0</span></h3>
+        <button id="checkout-button">Finalizar Compra</button>
+      </div>
+    </section>
+    <script type="module" src="./assets/js/menu.js"></script>
+    <script type="module" src="./assets/js/cart.js"></script>
+  </body>
+</html>

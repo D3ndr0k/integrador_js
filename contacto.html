@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurgerTown</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="appBar">
+      <button class="burgermenu">
+        <img src="./assets/img/menu.png" alt="menu" />
+      </button>
+      <div>
+        <a href="./index.html">
+          <picture class="logo">
+            <img src="./assets/img/burgerlogo.png" alt="burgerlogo" /> </picture
+        ></a>
+      </div>
+      <nav class="menu">
+        <a href="./products.html">Productos</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./aboutus.html">Sobre nosotros</a>
+      </nav>
+      <div>
+        <a href="./carrito.html">
+          <img src="./assets/img/bag.png" alt="carrito" />
+        </a>
+      </div>
+    </header>
+
+    <section class="contactus" id="contactanos">
+      <div class="contact">
+        <h3>Contáctenos</h3>
+        <table class="contacto">
+          <tr>
+            <th>Juan Perez</th>
+            <th>Karol karola</th>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/map.svg"
+                alt="map logo"
+              />Pepe Perez 754
+            </td>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/map.svg"
+                alt="map logo"
+              />karolaina 007
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/mail.svg"
+                alt="mail logo"
+              />perez@gmail.com
+            </td>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/mail.svg"
+                alt="mail logo"
+              />kami@gmail.com
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/phone.svg"
+                alt="phone logo"
+              />098 098 098
+            </td>
+            <td>
+              <img
+                class="minilogo"
+                src="./assets/img/phone.svg"
+                alt="phone logo"
+              />098 007 887
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="map">
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=artigas,artigas%20,uruguay+(Casitas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </section>
+    <section class="form-message">
+      <h3>No dudes en contactarnos!</h3>
+      <form id="contactForm">
+        <div>
+          <input type="text" id="name" placeholder="Nombre *" />
+          <small class="error-message"></small>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email *" />
+          <small class="error-message"></small>
+        </div>
+        <div>
+          <input type="number" id="phone" placeholder="Teléfono" />
+          <small class="error-message"></small>
+        </div>
+        <div>
+          <textarea
+            id="message"
+            placeholder="Ingresa tu mensaje"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button id="enviar" type="submit">Enviar</button>
+        <button id="borrar" type="reset">Borrar</button>
+      </form>
+    </section>
+
+    <footer>
+      <picture
+        ><img src="./assets/img/burgerlogo.png" alt="logo Burgertown"
+      /></picture>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contacto.html">Contáctenos</a>
+        <a href="./aboutus.html">Sobre Nosotros</a>
+      </nav>
+      <figure>
+        <a href="https://www.facebook.com/"
+          ><img src="./assets/img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="./assets/img/insta.svg" alt="instagram"
+        /></a>
+        <a href="https://x.com/"
+          ><img src="./assets/img/twitter.svg" alt="twitter"
+        /></a>
+      </figure>
+      <p>Copyright ©2024 | made by Kami :D</p>
+    </footer>
+    <script src="./assets/js/contacto.js"></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
